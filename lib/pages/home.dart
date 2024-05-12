@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -23,6 +24,9 @@ class Homepage extends StatelessWidget {
           // width: 30,
           // height: 30, //as seen this won't change the size
           margin: EdgeInsets.all(10),
+          child: SvgPicture.asset('assets/icons/Arrow - Left 2.svg'),
+          //despite the above adding the pic, we don't see it
+          //this is coz the color of icon and container is black
           decoration: BoxDecoration(
             color: Colors.black,
             borderRadius: BorderRadius.circular(10)
