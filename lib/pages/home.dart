@@ -17,8 +17,17 @@ class Homepage extends StatelessWidget {
         ),
         //this generates the word Breakfast in appBar
         backgroundColor: Colors.white,
-        elevation: 0.0,
+        elevation: 0.0,//remove shadow
         centerTitle: true,
+        leading: Container(
+          // width: 30,
+          // height: 30, //as seen this won't change the size
+          margin: EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            color: Colors.black,
+            borderRadius: BorderRadius.circular(10)
+          ),
+        ),
       ),
       // adding this because at the top of design we have an appBar
       //appBar is property and AppBar() is a widget
