@@ -53,7 +53,7 @@ class Homepage extends StatelessWidget {
         GestureDetector(
             onTap: (){
 
-            }
+            },
             child: Container(
             // width: 30,
             // height: 30, //as seen this won't change the size
