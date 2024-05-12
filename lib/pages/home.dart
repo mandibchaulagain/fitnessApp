@@ -27,8 +27,12 @@ class Homepage extends StatelessWidget {
           child: SvgPicture.asset('assets/icons/Arrow - Left 2.svg'),
           //despite the above adding the pic, we don't see it
           //this is coz the color of icon and container is black
+          alignment: Alignment.center,//this and down two's , tis the
+          //most IMPORTANT as only becoz of this the below two work
+          height: 20,//here
+          width: 20, //and here together make the icon smaller
           decoration: BoxDecoration(
-            color: Colors.black,
+            color: Color(0xffF7F8F8),//showed the icon
             borderRadius: BorderRadius.circular(10)
           ),
         ),
